@@ -1,0 +1,74 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# All local credentials; examples are safe to publish
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.keystore
+*.pfx
+*.cer
+credentials.json
+service-account*.json
+
+# Editor, build and dependency output
+.idea/
+.vscode/
+coverage/
+*.log
+build/
+DerivedData/
+ios/Pods/
+ios/.xcode.env.local
+**/xcuserdata/
+*.xcuserstate
+*.ipa
+*.dSYM/
+android/.gradle/
+android/.cxx/
+android/local.properties
+.supabase/
+supabase/.temp/
+# Keep native source, project files, Podfile and lockfiles.
+
+# Python tooling
+__pycache__/
+*.pyc
+
+# Local publication archives
+release/

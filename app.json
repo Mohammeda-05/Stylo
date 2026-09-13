@@ -1,0 +1,95 @@
+{
+  "expo": {
+    "name": "Stylo",
+    "slug": "user-app-0fe58cb8",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": [
+      "user-app",
+      "stylo"
+    ],
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#6B46C1"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.stylo",
+      "infoPlist": {
+        "NSCameraUsageDescription": "STYLO needs access to your camera to take photos of your outfits for style evaluation and wardrobe organization.",
+        "NSPhotoLibraryUsageDescription": "STYLO needs access to your photo library to select outfit photos for style evaluation and to save your favorite looks.",
+        "NSPhotoLibraryAddUsageDescription": "STYLO needs permission to save outfit photos and style evaluations to your photo library.",
+        "NSMicrophoneUsageDescription": "STYLO may need microphone access for video recording of outfit evaluations.",
+        "NSUserNotificationsUsageDescription": "STYLO sends notifications about style tips, outfit reminders, and new features to enhance your fashion experience.",
+        "NSLocalNetworkUsageDescription": "STYLO connects to your local development server to enable live updates while building the app.",
+        "NSBonjourServices": [
+          "_http._tcp"
+        ],
+        "buildNumber": 5
+      }
+    },
+    "android": {
+      "package": "com.example.stylo",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/icon.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#6B46C1"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#ffffff",
+          "mode": "production"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "STYLO needs access to your photo library to select outfit photos for style evaluation.",
+          "cameraPermission": "STYLO needs access to your camera to take photos of your outfits for style evaluation."
+        }
+      ],
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "notification": {
+      "icon": "./assets/images/icon.png",
+      "color": "#ffffff",
+      "iosDisplayInForeground": true,
+      "androidMode": "default",
+      "androidCollapsedTitle": "#{unread_notifications} new interactions"
+    }
+  }
+}
